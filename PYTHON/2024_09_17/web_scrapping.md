@@ -5,6 +5,7 @@ Esto es un poco de Web Scrapping usando bs4 y Selenium. La referencia de esto vi
 - https://codigofacilito.com/articulos/entornos-virtuales-python
 
 Primero de todo, montaremos un entorno virtual. Pero... porque?
+
 ---
 **NOTE**
 
