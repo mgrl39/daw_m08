@@ -21,6 +21,7 @@ source bin/activate
 ```python3
 pip3 install -U selenium
 ```
+Usare vim para la escritura en archivos, podeis usar el editor de texto que mas os guste. Es UP to vosotros.
 ```shell
 sudo apt install vim -y
 ```
