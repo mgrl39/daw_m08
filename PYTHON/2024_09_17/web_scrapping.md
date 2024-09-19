@@ -9,6 +9,7 @@ Primero de todo, montaremos un entorno virtual.
 > [!NOTE]  
 > Al instalar las dependencias a nivel sistema, tendremos acceso a estas librerías (dependencias) en cualquier parte de nuestro sistema operativo. Ya sea en documentos, descargar, imágenes etc... Esto puede sonar como una muy buena idea, pero la realidad es que no lo es. Esto ya que, en teoría, todos los proyectos son diferentes. Cada proyecto tiene su propio stack de dependencias y de versiones que debe usar para poder funcionar.
 
+## Montar el entorno virtual en Python
 Descargamos lo necesario para el entorno. 
 ```shell
 sudo apt install python3-venv -y
@@ -26,20 +27,27 @@ Si escribimos `ls` es posible que salgan:
 ```shell
 source bin/activate
 ```
-```python3
-pip3 install -U selenium
-```
+## Instalar Vim (o cualquier otro editor de texto).
 Usare vim para la escritura en archivos, podeis usar el editor de texto que mas os guste. Es UP to vosotros.
 ```shell
 sudo apt install vim -y
 ```
+## Instalacion de las librerias
+Vamos a descargar Selenium, para eso, debemos ejecutar la siguiente linea.
+```python3
+pip3 install -U selenium
+```
+
 Instalamos tanto **requests** como **bs4** para hacer el web scrapping.
 ```shell
 pip3 install requests
 ```
+
 ```shell
 pip3 install beautifulsoup4 && pip3 install bs4
 ```
+
+## Usando BeautifulSoup
 Creamos el siguiente archivo: `soup.py` con el siguiente contenido:
 En mi caso con `vim soup.py`, aunque se puede usar otro editor como nano, Emacs, vscode...
 ```shell
