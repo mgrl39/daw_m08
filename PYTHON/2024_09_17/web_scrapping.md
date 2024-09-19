@@ -29,6 +29,9 @@ Instalare **requests**, que es lo que necesito.
 ```shell
 pip3 install requests
 ```
+```shell
+pip3 install beautifulsoup4 && pip3 install bs4
+```
 Creamos el siguiente archivo: `soup.py` con el siguiente contenido:
 ```python3
 import requests
