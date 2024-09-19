@@ -1,3 +1,8 @@
+# Testing Python Selenium Soup
+
+https://medium.com/@udofiaetietop/webscrapping-beautifulsoup-or-selenium-3467edb3c0d9
+https://selenium-python.readthedocs.io/index.html
+
 ```shell
 sudo apt install python3-venv -y
 ```
