@@ -25,6 +25,28 @@ Usare vim para la escritura en archivos, podeis usar el editor de texto que mas 
 ```shell
 sudo apt install vim -y
 ```
+Instalare **requests**, que es lo que necesito. 
 ```shell
-mkdir web_scrapping && cd web_scrapping
+pip3 install requests
+```
+Creamos el siguiente archivo: `soup.py` con el siguiente contenido:
+```python3
+import requests
+from bs4 import BeautifulSoup
+
+
+cnn_url = "https://www.cnn.com/"
+
+def scrape_with_beautiful_soup(url):
+    response = requests.get(url)
+    soup = BeautifulSoup(response.text, 'html.parser')
+
+    #Extract and print headlines
+    headlines = soup.select('span')
+    for headline in headlines:
+        print(headline.text)
+
+#Scrape headlines using Beautiful Soup
+
+scrape_with_beautiful_soup(cnn_url)
 ```
