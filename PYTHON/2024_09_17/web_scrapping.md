@@ -57,3 +57,10 @@ def scrape_with_beautiful_soup(url):
 
 scrape_with_beautiful_soup(cnn_url)
 ```
+Guardamos el archivo y ejecutamos el siguiente comando:
+```shell
+python3 soup.py
+```
+Al ejecutar, aparece todos los textos dentro de los spans. Lo que hemos hecho es importar requests para hacer un get del enlace que queremos, en este caso de `www.cnn.com` y con soup hemos selecccionado los `spans`. Usando un bucle se imprime por pantalla.
+
+BeautifulSoup es mas rapido que selenium. Lo malo de Beautiful Soup es que lo que le llega del HTML lo toma y ya, pues pa' alante, es decir, no ejecuta JavaSript. Se utiliza BeautifulSoup ya que es mas rapido que Selenium, y la curva de aprendizaje de Selenium es mucho mas grande que la curva de aprendizaje de BeautifulSoup.
