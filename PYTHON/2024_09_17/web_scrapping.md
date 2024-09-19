@@ -25,7 +25,7 @@ Usare vim para la escritura en archivos, podeis usar el editor de texto que mas 
 ```shell
 sudo apt install vim -y
 ```
-Instalare **requests**, que es lo que necesito. 
+Instalamos tanto **requests** como **bs4** para hacer el web scrapping.
 ```shell
 pip3 install requests
 ```
