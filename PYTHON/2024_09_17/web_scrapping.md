@@ -5,11 +5,16 @@ Esto es un poco de Web Scrapping usando bs4 y Selenium. La referencia de esto vi
 - https://codigofacilito.com/articulos/entornos-virtuales-python
 
 Primero de todo, montaremos un entorno virtual. Pero... porque?
-```
+---
+**NOTE**
+
 Al instalar las dependencias a nivel sistema, tendremos acceso a estas librerías (dependencias) en cualquier parte de nuestro sistema operativo. Ya sea en documentos, descargar, imágenes etc…
 
 Esto puede sonar como una muy buena idea, pero la realidad es que no lo es. Esto ya que, en teoría, todos los proyectos son diferentes. Cada proyecto tiene su propio stack de dependencias y de versiones que debe usar para poder funcionar.
-```
+
+---
+
+
 Descargamos lo necesario para el entorno. 
 ```shell
 sudo apt install python3-venv -y
