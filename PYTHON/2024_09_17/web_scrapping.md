@@ -33,6 +33,10 @@ pip3 install requests
 pip3 install beautifulsoup4 && pip3 install bs4
 ```
 Creamos el siguiente archivo: `soup.py` con el siguiente contenido:
+En mi caso con `vim soup.py`, aunque se puede usar otro editor como nano, Emacs, vscode...
+```shell
+vim soup.py
+```
 ```python3
 import requests
 from bs4 import BeautifulSoup
