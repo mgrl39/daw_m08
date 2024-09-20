@@ -83,6 +83,11 @@ BeautifulSoup es mas rapido que selenium. Lo malo de Beautiful Soup es que lo qu
 
 ## Web Scrapping con Selenium
 Este abrira el Google Chrome, hay que tener el Chrome para que pueda Selenium abrir el navegador correctamente y hacer el scrapping. Tambien, acepta las cookies para poder acceder totalmente a la pagina, y acaba devolviendo el contenido en terminal.
+
+Metemos el siguiente contenido en un archivo, se puede llamar por ejemplo `selen.py` (OJO: no le pongais selenium.py, ya que fallara).
+```shell
+vim selen.py
+```
 ```python3
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -128,3 +133,5 @@ def scrape_with_selenium(url):
 scrape_with_selenium(cnn_url)
 ```
 (Este codigo fue arreglado por Ruben)
+
+Y hasta aqui l ainformacion del Web scrapping, 
