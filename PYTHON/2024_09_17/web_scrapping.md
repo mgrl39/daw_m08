@@ -82,6 +82,7 @@ Al ejecutar, aparece todos los textos dentro de los spans. Lo que hemos hecho es
 BeautifulSoup es mas rapido que selenium. Lo malo de Beautiful Soup es que lo que le llega del HTML lo toma y ya, pues pa' alante, es decir, no ejecuta JavaSript. Se utiliza BeautifulSoup ya que es mas rapido que Selenium, y la curva de aprendizaje de Selenium es mucho mas grande que la curva de aprendizaje de BeautifulSoup.
 
 ## Web Scrapping con Selenium
+Este abrira el Google Chrome, hay que tener el Chrome para que pueda Selenium abrir el navegador correctamente y hacer el scrapping. Tambien, acepta las cookies para poder acceder totalmente a la pagina, y acaba devolviendo el contenido en terminal.
 ```python3
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -126,3 +127,4 @@ def scrape_with_selenium(url):
 #Scrape headlines using Selenium
 scrape_with_selenium(cnn_url)
 ```
+(Este codigo fue arreglado por Ruben)
