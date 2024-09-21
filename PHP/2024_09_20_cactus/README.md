@@ -15,4 +15,25 @@ Si quisieramos ponerle valor objeto a `$a` podiamos haberlo hecho tambien.
 ### Reportar errores
 Para reportar errores, lo que vamos a usar sera: `error_reporting(E_ALL)`, pero esto en el entorno de desarrollo, **NUNCA EN PRODUCCION**.
 
-## Hablando del trabajo.
+## La creacion del ejercicio
+De alguna manera, hay que realizar la actividad que yo ya hice el dia anterior. Pero estos apuntes son directamente como la realizo el profesor.
+
+### 1. Programar es como siempre.
+Los fors son fors, el while es un while, el if es un if...
+Entonces, la logica del ejercicio no deberia ser muy complicada.
+### 2. Isset, GET y POST
+`isset` es una funcion muy UTIL.
+Si vamos a Google, y buscamos, aparece por ejemplo `?q=php` `&otravariable...`.
+Es decir, una busqueda por internet se envia por GET.
+En cambio, si enviamos por POST **no se modifica la URL**.
+
+Entonces, en una rray podemos almacenar lo que se envia por POST y por GET `isset($_POST['x'])` por ejemplo, y lo mismo con `$_GET`.
+
+### 3. Configuracion minima del entorno 
+Para ejecutar PHP necesitamos tener un servidor (server abierto con el comando `php` o server Apache, por ejemplo).
+Para abrir un servidor en php en el puerto 5500 y que pueda acceder cualquiera en la red local podemos hacer: `php -S 0.0.0.0:5500 -t .` indicando que `-t .` es el directorio actual. Es decir, si tenemos un archivo `file.php` podemos entrar a la pagina desde `IP_DE_LA_MAQUINA:5500/file.php` o si estamos desde la propia maquina `localhost:5500/file.php`.
+
+Si tenemos el server Apache vamos a `/var/www/html`. El usuario que ejecuta Apache es el usuario `www-data`, y el usuario que escribe en el documento somos nosotros (mi usuario se llama `usuario`). Por lo tanto, para no tener problemas editanndo archivos ahi modifique el propietario de la carpeta, de manera que, el propietario es `usuario` (mi user) y el grupo es `www-data`:
+```shell
+/var/www/html$ sudo chown -R usuario:www-data .
+```
