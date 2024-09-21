@@ -37,3 +37,37 @@ Si tenemos el server Apache vamos a `/var/www/html`. El usuario que ejecuta Apac
 ```shell
 /var/www/html$ sudo chown -R usuario:www-data .
 ```
+
+## Empezando a programar
+### 1. Formulario
+Empezamos a crear el archivo, yo le he puesto `tablenator.php` (ya que es el nombre que le puso Ruben), este archivo, como he dicho anteriormente, podeis tener server abierto en cualquier carpeta con el comando `php -S 0.0.0.0:5500 -t .` o en `/var/www/html`, yo lo tengo en el Apache (es decir, el `/var/www/html`).
+
+Vamos a meter un formulario, buscamos en googel como hacer un formaulario y encuentro esta pagina: https://www.w3schools.com/html/html_forms.asp
+Adaptamos el ejemplo a nuestras necesidades:
+```html
+<form>
+  <label for="rows">Filas:</label><br>
+  <input type="text" id="rows" name="rows"><br>
+  <label for="cols">Columnas:</label><br>
+  <input type="text" id="cols" name="cols"><br><br>
+  <input type="submit" value="enviar">
+</form>
+<!-- https://www.w3schools.com/html/html_forms.asp -->
+```
+Tenemos dos inputs de tipo texto, una para las filas y otra para las columnas.
+Y un input tipo submit, que es el boton de enviar. Pero no quiero que se mande la info por GET (no queremos que cambie el enlace), entonces, al form le indicamos que debe ser via `POST` --> `<form method="post">`
+```html
+<form>
+  <label for="rows">Filas:</label><br>
+  <input type="text" id="rows" name="rows"><br>
+  <label for="cols">Columnas:</label><br>
+  <input type="text" id="cols" name="cols"><br><br>
+  <input type="submit" value="enviar">
+</form>
+<!-- https://www.w3schools.com/html/html_forms.asp -->
+```
+
+### 2. PHP GET POST
+Vale, ahora vamos a meter codigo PHP, buscamos en google **PHP GET POST** y entramos a la pagina de w3Schools de nuevo :)
+https://www.w3schools.com/php/php_superglobals_post.asp
+
