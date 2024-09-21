@@ -57,7 +57,7 @@ Adaptamos el ejemplo a nuestras necesidades:
 Tenemos dos inputs de tipo texto, una para las filas y otra para las columnas.
 Y un input tipo submit, que es el boton de enviar. Pero no quiero que se mande la info por GET (no queremos que cambie el enlace), entonces, al form le indicamos que debe ser via `POST` --> `<form method="post">`
 ```html
-<form>
+<form method="post">
   <label for="rows">Filas:</label><br>
   <input type="text" id="rows" name="rows"><br>
   <label for="cols">Columnas:</label><br>
@@ -70,4 +70,50 @@ Y un input tipo submit, que es el boton de enviar. Pero no quiero que se mande l
 ### 2. PHP GET POST
 Vale, ahora vamos a meter codigo PHP, buscamos en google **PHP GET POST** y entramos a la pagina de w3Schools de nuevo :)
 https://www.w3schools.com/php/php_superglobals_post.asp
+Y encontramos este contenido:
+```php
+<html>
+<body>
 
+<form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
+  Name: <input type="text" name="fname">
+  <input type="submit">
+</form>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = htmlspecialchars($_POST['fname']);
+  if (empty($name)) {
+    echo "Name is empty";
+  } else {
+    echo $name;
+  }
+}
+?>
+
+</body>
+</html>
+```
+
+Nos llevamos la parte interesante a nuestro codigo, entonces, tenemos **esto** por ahora:
+```php
+<form method="post">
+  <label for="rows">Filas:</label><br>
+  <input type="text" id="rows" name="rows"><br>
+  <label for="cols">Columnas:</label><br>
+  <input type="text" id="cols" name="cols"><br><br>
+  <input type="submit" value="enviar">
+</form>
+<!-- https://www.w3schools.com/html/html_forms.asp -->
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = htmlspecialchars($_POST['fname']);
+  if (empty($name)) {
+    echo "Name is empty";
+  } else {
+    echo $name;
+  }
+}
+?>
+```
