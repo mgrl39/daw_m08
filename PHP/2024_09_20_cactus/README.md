@@ -13,6 +13,6 @@ Cuando estemos programando usaremos **print_r($a);** para tener info de lo que e
 Si quisieramos ponerle valor objeto a `$a` podiamos haberlo hecho tambien.
 
 ### Reportar errores
-Para reportar errores, lo que vamos a usar sera: `error_reporting(E_ALL)`, pero esto een el entorno de desarrollo, **NUNCA EN PRODUCCION**.
+Para reportar errores, lo que vamos a usar sera: `error_reporting(E_ALL)`, pero esto en el entorno de desarrollo, **NUNCA EN PRODUCCION**.
 
 ## Hablando del trabajo.
