@@ -1,7 +1,7 @@
 # Cactus, pero con la clase.
 En este capitulo escribire lo que nos explicaron el dia 20/09/2024
 
-## Hablemos un poco de PHP
+## Un poco de PHP
 ### Variables y impresion
 Si hacemos lo siguiente:
 ```php
