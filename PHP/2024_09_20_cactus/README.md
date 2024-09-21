@@ -117,3 +117,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 ```
+Vamos a borrar cosas que no nos interesan, por ejemplo el if (lo borramos entero). Y en vez de tener una varibale setteada $name, nosotros tenemos dos valores, que es las rows y las cols, entonces, tendremos 2 setteadas.
+```php
+<form method="post">
+  <label for="rows">Filas:</label><br>
+  <input type="text" id="rows" name="rows"><br>
+  <label for="cols">Columnas:</label><br>
+  <input type="text" id="cols" name="cols"><br><br>
+  <input type="submit" value="enviar">
+</form>
+<!-- https://www.w3schools.com/html/html_forms.asp -->
+```
