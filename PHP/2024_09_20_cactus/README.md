@@ -117,7 +117,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 ```
-Vamos a borrar cosas que no nos interesan, por ejemplo el if (lo borramos entero). Y en vez de tener una varibale setteada $name, nosotros tenemos dos valores, que es las rows y las cols, entonces, tendremos 2 setteadas.
+Vamos a borrar cosas que no nos interesan, por ejemplo el if (lo borramos entero). En vez de tener una varibale setteada $name, tendremos dos valores, que para las rows y otra para cols, entonces, tendremos 2 setteadas.
 ```php
 <form method="post">
   <label for="rows">Filas:</label><br>
@@ -127,4 +127,37 @@ Vamos a borrar cosas que no nos interesan, por ejemplo el if (lo borramos entero
   <input type="submit" value="enviar">
 </form>
 <!-- https://www.w3schools.com/html/html_forms.asp -->
+```
+
+
+## Resultado final
+```php
+<form method="post">
+  <label for="rows">Filas:</label><br>
+  <input type="text" id="rows" name="rows"><br>
+  <label for="cols">Columnas:</label><br>
+  <input type="text" id="cols" name="cols"><br>
+  <input type="submit" value="Enviar">
+</form>
+
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if (isset($_POST["rows"]) && isset($_POST["cols"])) {
+                $rows = htmlspecialchars($_POST["rows"]);
+                $cols = htmlspecialchars($_POST["cols"]);
+
+
+                echo '<table border="1">';
+                for ($i = 0; $i < $rows; $i++) {
+                        echo "<tr>";
+                        for ($j = 0; $j < $cols; $j++) {
+                                echo "<td>DAW2</td>";
+                        }
+                        echo "</tr>";
+                }
+                echo "</table>";
+
+        }
+}
 ```
