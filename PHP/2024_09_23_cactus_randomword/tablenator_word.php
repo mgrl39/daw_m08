@@ -12,7 +12,7 @@
 function generateWord($length = 7)
 {
 	$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    $charactersLength = strlen($characters);	
+    	$charactersLength = strlen($characters);	
 	$randomString = '';
 
 	for ($i = 0 ; $i < $length ; $i++) {
@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 for ($i = 0; $i < $rows; $i++) {
                         echo "<tr>";
                         for ($j = 0; $j < $cols; $j++) {
-						//	echo "<td>" . generateWord($length) . "</td>";
+				// echo "<td>" . generateWord($length) . "</td>";
                            	echo "<td>" . $word . "</td>";
                         }
                         echo "</tr>";
