@@ -127,9 +127,31 @@ Vamos a borrar cosas que no nos interesan, por ejemplo el if (lo borramos entero
   <input type="submit" value="enviar">
 </form>
 <!-- https://www.w3schools.com/html/html_forms.asp -->
+
+<?php
+   if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $rows = htmlspecialchars($_POST['rows']);
+        $cols = htmlspecialchars($_POST['cols']);
+}
+?>
 ```
+Vamos a poner comillas dobles en rows y cols también, solo para que se mantenga consistencia `htmlspecialchars($_POST["rows"])`
+`htmlspecialchars($_POST["cols"])`
+Vamos a meter código html dentro de `echo`. Aunque en proyectos siguientes no lo haremos asi.
+Para definir la tabla (con un border) escribimos `<table border=¨1¨>`, empezamos el for (que pondra los `<tr></tr>`) y otro for dentro que pondra
+`<td>DAW2</td>`.
 
-
+```php
+echo '<table border="1">';
+for ($i = 0; $i < $rows; $i++) {
+     echo "<tr>";
+     for ($j = 0; $j < $cols; $j++) {
+         echo "<td>DAW2</td>";
+     }
+     echo "</tr>";
+     }
+     echo "</table>";
+```
 ## Resultado final
 ```php
 <form method="post">
@@ -141,7 +163,6 @@ Vamos a borrar cosas que no nos interesan, por ejemplo el if (lo borramos entero
 </form>
 
 <?php
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (isset($_POST["rows"]) && isset($_POST["cols"])) {
                 $rows = htmlspecialchars($_POST["rows"]);
