@@ -9,6 +9,7 @@ $a = "a";
 $a = 1;
 ```
 Como podemos ver, no estamos definiendo el tipo, era String, luego int, no salta errores. Porque si le has puesto un uno es que has querido ponerlo, no?
+
 Cuando estemos programando usaremos **print_r($a);** para tener info de lo que estamos haciendo.
 Si quisieramos ponerle valor objeto a `$a` podiamos haberlo hecho tambien.
 
@@ -20,11 +21,14 @@ De alguna manera, hay que realizar la actividad que yo ya hice el dia anterior. 
 
 ### 1. Programar es como siempre.
 Los fors son fors, el while es un while, el if es un if...
+
 Entonces, la logica del ejercicio no deberia ser muy complicada.
 ### 2. Isset, GET y POST
 `isset` es una funcion muy UTIL.
 Si vamos a Google, y buscamos, aparece por ejemplo `?q=php` `&otravariable...`.
+
 Es decir, una busqueda por internet se envia por GET.
+
 En cambio, si enviamos por POST **no se modifica la URL**.
 
 Entonces, en una rray podemos almacenar lo que se envia por POST y por GET `isset($_POST['x'])` por ejemplo, y lo mismo con `$_GET`.
@@ -55,6 +59,7 @@ Adaptamos el ejemplo a nuestras necesidades:
 <!-- https://www.w3schools.com/html/html_forms.asp -->
 ```
 Tenemos dos inputs de tipo texto, una para las filas y otra para las columnas.
+
 Y un input tipo submit, que es el boton de enviar. Pero no quiero que se mande la info por GET (no queremos que cambie el enlace), entonces, al form le indicamos que debe ser via `POST` --> `<form method="post">`
 ```html
 <form method="post">
@@ -68,8 +73,10 @@ Y un input tipo submit, que es el boton de enviar. Pero no quiero que se mande l
 ```
 
 ### 2. PHP GET POST
+
 Vale, ahora vamos a meter codigo PHP, buscamos en google **PHP GET POST** y entramos a la pagina de w3Schools de nuevo :)
 https://www.w3schools.com/php/php_superglobals_post.asp
+
 Y encontramos este contenido:
 ```php
 <html>
@@ -137,7 +144,9 @@ Vamos a borrar cosas que no nos interesan, por ejemplo el if (lo borramos entero
 ```
 Vamos a poner comillas dobles en rows y cols también, solo para que se mantenga consistencia `htmlspecialchars($_POST["rows"])`
 `htmlspecialchars($_POST["cols"])`
+
 Vamos a meter código html dentro de `echo`. Aunque en proyectos siguientes no lo haremos asi.
+
 Para definir la tabla (con un border) escribimos `<table border=¨1¨>`, empezamos el for (que pondra los `<tr></tr>`) y otro for dentro que pondra
 `<td>DAW2</td>`.
 
