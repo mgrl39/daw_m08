@@ -22,7 +22,6 @@ $usuario = “rusben”;
 <p>
 <?php echo $saludo ?>
 </p>
-?>
 ```
 Yo puedo hacer en PHP en trocitos. Podriamos tener codigo PHP, luego HTML, luego PHP, luego HTML, podriamos hacer una plantilla de esa manera, pero no lo haremos asi…
 
