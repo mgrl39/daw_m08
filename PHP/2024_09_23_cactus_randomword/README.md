@@ -12,3 +12,34 @@ Que genere la palabra, y le metemos en este codigo donde pone DAW2.
 
 ---
 Recordemos que el archivo [file.php](../2024_09_19_cactus/file.php) fue mi implementacion, y al dia siguiente Ruben hizo su propia implementacion [tablenator.php](../2024_09_20_cactus/tablenator.php). Entonces, le he realizado una mejora con lo que el Maestro solicito.
+
+## Funcion generateWord
+Esta es la funcion que utilizo para poder generar palabras aleatorias. Estas "palabras" son caracteres aleatorios que se van concatenando en un String.
+
+En la variable `$characters` tenemos todos los caracteres, numeros, letras (minusculas y mayusculas).
+
+Creo otra variable `$charactersLength` para guardar la longitud del String `$characters`, para saber la longitud siempre (imaginate que quiero meter el caracter `ñ` o algo asi) puees si fuera un numero deberia estar contando caracter a caracter. Pero usando `strlen` guarda la cuenta.
+
+Finalmente, creo un `randomString` con `''`.
+
+Finalmente, hago un bucle con un for y usando `.=` concateno cada caracter, pero cada caracter aleatorio usando **random_int** de 0 a `$charactersLength - 1`.
+
+Finalmente, devuelvo el `randomString`.
+```php
+function generateWord($length = 7)
+{
+	$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+ 	$charactersLength = strlen($characters);	
+	$randomString = '';
+
+	for ($i = 0 ; $i < $length ; $i++) {
+		$randomString .= $characters[random_int(0, $charactersLength - 1)];
+	}
+	return $randomString;
+}
+```
+
+Las 3 paginas que necesite para la creacion de este proyecto fueron:
+- https://www.php.net/manual/en/function.is-numeric.php
+- https://stackoverflow.com/questions/4356289/php-random-string-generator
+- https://eitca.org/web-development/eitc-wd-pmsf-php-and-mysql-fundamentals/php-procedures-and-functions/functions-php-procedures-and-functions/examination-review-functions-php-procedures-and-functions/how-can-we-specify-default-values-for-function-parameters-in-php/
