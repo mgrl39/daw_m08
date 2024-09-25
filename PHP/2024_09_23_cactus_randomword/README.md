@@ -38,7 +38,27 @@ function generateWord($length = 7)
 	return $randomString;
 }
 ```
+En el for en vez de tener la palabra "DAW" vamos a meter nuestra funcion. 
 
+Metemos en el form lo siguiente:
+```html
+<label for="length">Length:</label><br>
+<input type="text" id="length" name="length"><br>
+```
+
+Y en la parte de PHP lo siguiente:
+```html
+$length = htmlspecialchars($_POST["length"]);
+if ($length > 0 && is_numeric($length))
+	$word = generateWord($length);
+else
+	$word = generateWord();
+```
+
+Finalmente, en la parte dentro del for tendremos esto en vez de "DAW"
+```html
+echo "<td>" . $word . "</td>";
+```
 Si no le paso argumentos a la funcion, el parametro por defecto sera `7`, es por eso el `$length = 7`.
 
 Las 3 paginas que necesite para la mejora de este proyecto fueron:
