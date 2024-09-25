@@ -80,7 +80,7 @@ function  generate_word($num) {
 	for ($i = 0; $i < $num ; $i++)
 	{
 		$letter = $alphabet[rand(0, $max)];
-		$word .= $letter; // El .= es para concatenar como el += en java.
+		$word .= $letter;
 	}
 	return $word;
 }
