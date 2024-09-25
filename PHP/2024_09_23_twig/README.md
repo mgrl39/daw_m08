@@ -37,8 +37,27 @@ Podemos instalar Twig con el **composer** (un gestor de librerias), composer est
 sudo apt install composer -y
 ```
 
-Ahora ejecutaremos el comando que te dice en la pagina.
+Ahora ejecutaremos el comando que te dice en la pagina. Pero esto lo haremos dependiendo de donde abrimos nuestro servidor, si es un Apache lo hacemos dentro de `/var/www/html`. Si abrimos servidor con el comando `php -S 0.0.0.0:5500 -t .` no hara falta estar cambiando permisos.
 ```bash
 composer require "twig/twig:^3.0"
 ```
 Eso creara un `composer.json`, `composer.lock` y una carpeta `vendor` con mas cosas dentro (`autoload.php`, y las carpetas **composer**, **symfony** y **twig**)
+
+Si estamos usando Apache, en la carpeta de `/var/www/html` debemos ejecutar para que los archivos sean de mi usuario `usuario` y que el grupo sea `www-data` (el que usa el servidor Apache).
+```bash
+sudo chown -R usuario:www-data .
+```
+
+Bien, ahora crearemos el archivo `twig_test.php`
+```php
+<?php
+require_once 'vendor/autoload.php';
+
+$loader = new \Twig\Loader\ArrayLoader([
+	'index' => 'Hello {{ name }}!',
+]);
+$twig = new \Twig\Environment($loader);
+
+echo $twig->render('index', ['name' => 'Fabien']);
+?>
+```
