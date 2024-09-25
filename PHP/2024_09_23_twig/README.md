@@ -79,4 +79,7 @@ Hello Fabien!
 ```
 
 ## Segundo Twig Test
-
+Creamos una carpeta `templates` y una carpeta `cache`.
+```bash
+mkdir templates cache
+```
