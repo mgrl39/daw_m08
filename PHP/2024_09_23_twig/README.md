@@ -83,3 +83,7 @@ Creamos una carpeta `templates` y una carpeta `cache`.
 ```bash
 mkdir templates cache
 ```
+Dentro de templates crearemos un archivo `index.html`
+```bash
+touch templates/index.html
+```
