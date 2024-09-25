@@ -29,6 +29,48 @@ Entonces, vamos a crear una variable `$alphabet` con todo el abecedario.
 ```php
 $alphabet = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t","u", "v", "w", "x", "y", "z");
 ```
+
+De alguna manera, nos interesa sabes cuanto mide nuestro array. Para eso, buscamos en google y encontramos la respuesta en W3School  https://www.w3schools.com/pHP/func_array_sizeof.asp 
+
+Este es el ejemplo de W3Schools:
+```php
+ <?php
+$cars=array("Volvo","BMW","Toyota");
+echo sizeof($cars);
+?>
+```
+
+Por lo tanto, nosotros tendremos lo siguiente
+```php
+$alphabet = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t","u", "v", "w", "x", "y", "z");
+$max = sizeof($alphabet) - 1;
+```
+Se le resta uno ya que los arrays empiezan por 0
+
+Ahora, vamos a crear la palabra que retornaremos.
+```php
+$word = "";
+```
+
+Cuantas letras necesitaremos? Pues las que nos indiquen en el argumento de la funcion.
+Asi que, usaremos una variable `$letter` y un bucle hasta `$num`.
+Para guardar dentro de `$letter` una letra aleatoria usaremos al funcion **rand**, entre 0 y el maximo (recordemos que al max ya le hemos restando uno).
+
+Como ultimo paso antes de acabar, concatenamos en `$word` cada `$letter` utilizando el `.=`.
+
+Finalmente, devolvemos `$word`.
+```php
+$letter = "";
+
+	for ($i = 0; $i < $num ; $i++)
+	{
+		// Pilla una aleatoria del rango valido
+		$letter = $alphabet[rand(0, $max)];
+		$word .= $letter; // El .= es para concatenar como el += en java.
+
+	}
+```
+
 ```php
 function  generate_word($num) {
 	// Definimos el array  https://www.w3schools.com/php/php_arrays.asp
