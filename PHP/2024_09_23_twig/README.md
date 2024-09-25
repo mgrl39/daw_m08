@@ -97,6 +97,9 @@ Y meteremos el siguiente contenido
 ```
 
 Ahora, modificaremos el `twig_test.php`
+```bash
+vim twig_test.php
+```
 ```php
 $loader = new \Twig\Loader\FilesystemLoader('templates');
 $twig = new \Twig\Environment($loader, [
