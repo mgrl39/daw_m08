@@ -25,11 +25,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (isset($_POST["rows"]) && isset($_POST["cols"])) {
                 $rows = htmlspecialchars($_POST["rows"]);
                 $cols = htmlspecialchars($_POST["cols"]);
-				$length = htmlspecialchars($_POST["length"]);
-				if ($length > 0 && is_numeric($length))
-					$word = generateWord($length);
-				else
-					$word = generateWord();
+		$length = htmlspecialchars($_POST["length"]);
+		if ($length > 0 && is_numeric($length))
+			$word = generateWord($length);
+		else
+			$word = generateWord();
 
                 echo '<table border="1">';
                 for ($i = 0; $i < $rows; $i++) {
