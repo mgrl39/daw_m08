@@ -1,7 +1,18 @@
 # Tablenator 2
-Ahora en este código PHP debemos meter una función que sea generar una palabra, cualquier palabra con diferentes letras, por ejemplo. Una función con el nombre `generateWord()` y le pasamos el numero de letras que queremos, por ejemplo, 7 letras `generateWord(7);` 
-
+## Enunciado
+Ahora en este código PHP debemos meter una función que sea generar una palabra, cualquier palabra con diferentes letras, por ejemplo. 
+Una función con el nombre generateWord() y le pasamos el numero de letras que queremos, por ejemplo,  7 letras
+`generateWord(7);`
 Que genere la palabra, y le metemos en este codigo donde pone DAW2.
+
+**No son palabras con sentido, son randoms.**
+
+## Creacion de la funcion
+Metemos un parametro mas en nuestro formulario. Aqui escribiremos la cantidad de letras que queremos.
+```html
+<label for="letters">Letras:</label><br>
+<input type="text" id="letters" name="letters"><br>
+```
 
 
 ## El resultado final
