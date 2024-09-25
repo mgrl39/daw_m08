@@ -23,9 +23,9 @@ $usuario = “rusben”;
 <?php echo $saludo ?>
 </p>
 ```
-Yo puedo hacer en PHP en trocitos. Podriamos tener codigo PHP, luego HTML, luego PHP, luego HTML, podriamos hacer una plantilla de esa manera, pero no lo haremos asi…
+Yo puedo usar PHP en trocitos. Podriamos tener codigo PHP, luego HTML, luego PHP, luego HTML, de esta manera, tendriamos una plantilla, cutre, pero una plantilla. Igualmente, no lo haremos asi…
 
-Claro, realmente este `$usuario` y `$saludo` las cogeriamos de un servidor, cargariamos esas variables, y luego pasaria por la plantilla.
+Claro, realmente los valores de las variables `$usuario` y `$saludo` las cogeriamos de un servidor, cargariamos esas variables, y luego pasaria por la plantilla.
 Las cogeria de funciones como `get_username`... `get_saludo`... creadas por nosotros, no asi escritos de manera explicita.
 
 ## Instalacion de Twig
