@@ -95,3 +95,7 @@ Y meteremos el siguiente contenido
 ```html
 <h1>Hello {{ name }}!</h1>
 ```
+
+Ahora, modificaremos el `twig_test.php`
+```php
+```
