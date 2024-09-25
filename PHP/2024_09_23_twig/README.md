@@ -49,6 +49,10 @@ sudo chown -R usuario:www-data .
 ```
 
 Bien, ahora crearemos el archivo `twig_test.php`
+```bash
+touch twig_test.php
+```
+
 ```php
 <?php
 require_once 'vendor/autoload.php';
