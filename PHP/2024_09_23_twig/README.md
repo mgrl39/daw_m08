@@ -87,3 +87,11 @@ Dentro de templates crearemos un archivo `index.html`
 ```bash
 touch templates/index.html
 ```
+Con el editor que querais vamos a modificar el `index.html`, yo con el propio `vim`.
+```bash
+vim templates/index.html
+```
+Y meteremos el siguiente contenido
+```html
+<h1>Hello {{ name }}!</h1>
+```
