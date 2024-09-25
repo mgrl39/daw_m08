@@ -70,36 +70,18 @@ $letter = "";
 
 	}
 ```
-
+Asi que la funcion queda de esta manera:
 ```php
 function  generate_word($num) {
-	// Definimos el array  https://www.w3schools.com/php/php_arrays.asp
 	$alphabet = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t","u", "v", "w", "x", "y", "z");
-
-	// Vamos a ver como se utiliza la funcion random de PHP
-	// https://www.w3schools.com/pHP/func_math_rand.asp
-	// Nos interesaria tambien saber si el array de php tiene una funcion size, en este caso, podemos usar sizeof. Sizeof nos dice cuanto mide el array
-	// https://www.w3schools.com/pHP/func_array_sizeof.asp
-
-	// Creamos una variable sizeof en  el alfabeto. Quitamos uno porque los arrays empiezan contando por 0
 	$max = sizeof($alphabet) - 1;
-
-	// Vamos a crear la palabra que retornaremos
 	$word = "";
-
-	// Cuantas letras necesitare? pues la que nos indiquen en el argumento de la funcion.
-	// Asi que usaremos una variable $letter y un bucle for para el $num que nos indiquen
 	$letter = "";
-
 	for ($i = 0; $i < $num ; $i++)
 	{
-		// Pilla una aleatoria del rango valido
 		$letter = $alphabet[rand(0, $max)];
 		$word .= $letter; // El .= es para concatenar como el += en java.
-
 	}
-
-	// Al final todo vamos a retornar una palabra
 	return $word;
 }
 ```
