@@ -47,7 +47,7 @@ Metemos en el form lo siguiente:
 ```
 
 Y en la parte de PHP lo siguiente:
-```html
+```php
 $length = htmlspecialchars($_POST["length"]);
 if ($length > 0 && is_numeric($length))
 	$word = generateWord($length);
