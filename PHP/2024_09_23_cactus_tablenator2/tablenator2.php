@@ -53,7 +53,7 @@ function  generate_word($num) {
 	$word = "";
 
 	// Cuantas letras necesitare? pues la que nos indiquen en el argumento de la funcion.
-	// ASi que usaremos una variable $letter y un bucle for para el $num que nos indiquen
+	// Asi que usaremos una variable $letter y un bucle for para el $num que nos indiquen
 	$letter = "";
 
 	for ($i = 0; $i < $num ; $i++)
