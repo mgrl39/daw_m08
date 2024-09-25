@@ -41,4 +41,4 @@ Ahora ejecutaremos el comando que te dice en la pagina.
 ```bash
 composer require "twig/twig:^3.0"
 ```
-Eso creara un `composer.json`, `composer.lock` y una carpeta `vendor` con mas cosas dentro (`autoload.php`, y las carpetas *composer*, *symfony* y *twig*)
+Eso creara un `composer.json`, `composer.lock` y una carpeta `vendor` con mas cosas dentro (`autoload.php`, y las carpetas **composer**, **symfony** y **twig**)
