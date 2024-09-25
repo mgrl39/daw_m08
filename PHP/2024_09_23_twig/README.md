@@ -29,5 +29,16 @@ Claro, realmente los valores de las variables `$usuario` y `$saludo` las cogeria
 Las cogeria de funciones como `get_username`... `get_saludo`... creadas por nosotros, no asi escritos de manera explicita.
 
 ## Instalacion de Twig
+Vamos a instalar Twig. Symfony (un framework) usa Twig. https://twig.symfony.com/
 
+
+Podemos instalar Twig con el **composer** (un gestor de librerias), composer esta bien porque instala librerias de PHP, etntonces instalaremos composer:
+```bash
+sudo apt install composer -y
+```
+
+Ahora ejecutaremos el comando que te dice en la pagina.
+```bash
+composer require "twig/twig:^3.0"
+```
 
