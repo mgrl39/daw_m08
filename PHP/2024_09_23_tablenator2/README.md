@@ -85,6 +85,10 @@ function  generate_word($num) {
 	return $word;
 }
 ```
+Ahora solamente quedaria meter en el bucle `for` cambiar DAW2 por `generate_word` 
+```php
+echo "<td>" . generate_word($letters) . "</td>";
+```
 
 ## El resultado final
 ```php
