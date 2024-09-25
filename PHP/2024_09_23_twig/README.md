@@ -112,3 +112,12 @@ $twig = new \Twig\Environment($loader, [
 echo $twig->render('index.html', ['name' => 'Fabien']);
 ?>
 ```
+
+Lo mismo de antes, si es con Apache tenemos que volver a cambiar permisos `sudo chown -R usuario:www-data .`, si esta abierto con el comando `php -S 0.0.0.0:5500 -t .` no hace falta.
+
+Entonces, si entramos a la pagina:
+- `localhost:5500/twig_test.php` con el comando `php -S 0.0.0.0:5500 -t .`
+- `localhost/twig_test.php` con PHP.
+
+(en vez de localhost podemos indicar la IP de la maquina directamente)
+
