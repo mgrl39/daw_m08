@@ -64,7 +64,7 @@ function  generate_word($num) {
 
 	}
 
-	// Alfinal todo vamos a retornar una palabra
+	// Al final todo vamos a retornar una palabra
 	return $word;
 }
 
