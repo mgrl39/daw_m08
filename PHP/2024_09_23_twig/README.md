@@ -67,8 +67,9 @@ Entonces, si entramos a la pagina:
 - `localhost:5500/twig_test.php` con el comando `php -S 0.0.0.0:5500 -t .`
 - `localhost/twig_test.php` con PHP.
 
-Entonces, veremos una pagina que literalmente pone
+(en vez de localhost podemos indicar la IP de la maquina directamente)
+
+Entonces, veremos una pagina que literalmente pone:
 ```html
 Hello Fabien!
 ```
-(en vez de localhost podemos indicar la IP de la maquina directamente)
