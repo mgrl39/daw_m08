@@ -14,26 +14,26 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	if (isset($_POST["rows"]) && isset($_POST["cols"])) {
-    	$rows = htmlspecialchars($_POST["rows"]);
-    	$cols = htmlspecialchars($_POST["cols"]);
+		$rows = htmlspecialchars($_POST["rows"]);
+		$cols = htmlspecialchars($_POST["cols"]);
 
-    	$letters = 7;
-    	if (isset($_POST["letters"])) {
-        	$letters = $_POST["letters"];
-    	}
-    	echo '<table border="1">';
-    	for ($i = 0; $i < $rows ; $i++)
-    	{
-        	echo "<tr>";
-        	for ($j = 0; $j < $cols ; $j++)
-        	{
-            	// En vez de poner DAW2 ponemos la funcion
-            	// echo "<td>DAW2</td>";
-            	echo "<td>" . generate_word($letters) . "</td>";
-        	}
-        	echo "</tr>";
-    	}
-    	echo '</table>';
+		$letters = 7;
+		if (isset($_POST["letters"])) {
+			$letters = $_POST["letters"];
+		}
+		echo '<table border="1">';
+		for ($i = 0; $i < $rows ; $i++)
+		{
+			echo "<tr>";
+			for ($j = 0; $j < $cols ; $j++)
+			{
+				// En vez de poner DAW2 ponemos la funcion
+				// echo "<td>DAW2</td>";
+				echo "<td>" . generate_word($letters) . "</td>";
+			}
+			echo "</tr>";
+		}
+		echo '</table>';
 	}
 }
 
@@ -58,9 +58,9 @@ function  generate_word($num) {
 
 	for ($i = 0; $i < $num ; $i++)
 	{
-    	// Pilla una aleatoria del rango valido
-    	$letter = $alphabet[rand(0, $max)];
-    	$word .= $letter; // El .= es para concatenar como el += en java.
+		// Pilla una aleatoria del rango valido
+		$letter = $alphabet[rand(0, $max)];
+		$word .= $letter; // El .= es para concatenar como el += en java.
 
 	}
 
