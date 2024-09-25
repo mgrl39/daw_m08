@@ -41,7 +41,7 @@ function generateWord($length = 7)
 
 Si no le paso argumentos a la funcion, el parametro por defecto sera `7`, es por eso el `$length = 7`.
 
-Las 3 paginas que necesite para la creacion de este proyecto fueron:
+Las 3 paginas que necesite para la mejora de este proyecto fueron:
 - https://www.php.net/manual/en/function.is-numeric.php
 - https://stackoverflow.com/questions/4356289/php-random-string-generator
 - https://eitca.org/web-development/eitc-wd-pmsf-php-and-mysql-fundamentals/php-procedures-and-functions/functions-php-procedures-and-functions/examination-review-functions-php-procedures-and-functions/how-can-we-specify-default-values-for-function-parameters-in-php/
