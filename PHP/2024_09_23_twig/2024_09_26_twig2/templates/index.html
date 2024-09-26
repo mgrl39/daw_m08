@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ titulo }}</title>
+	</head>
+	<body>
+		<h1>{{ name }}'s info! {{ emoji }}</h1>
+		<hr>
+		<p><strong>{{ social_network }}: </strong><a href="https://{{ social_link }}" target="_blank">{{ social_link }}</a></p>
+		<h2>Education</h2>
+		<ul>
+			{% for edu in education %}
+			<li>
+				<strong>{{ edu.degree }}</strong>
+				{{ edu.institution }} ({{ edu.year }})<br>
+			</li>
+			{% endfor %}
+		</ul>
+		<h2>Work Experience</h2>
+		<ul>
+			{% for work in work_experience %}
+			<li>
+				<strong>{{ work.role }}</strong>
+				({{ work.year }})<br>
+			</li>
+			{% endfor %}
+		</ul>
+		<h2>Learning</h2>
+		<ol>
+			{% for learn in learning %}
+			<li>
+				<strong>{{ learn.language }}</strong>
+			</li>
+			{% endfor %}
+		</ol>
+	</body>
+</html>
