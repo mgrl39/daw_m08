@@ -119,5 +119,9 @@ Entonces, si entramos a la pagina:
 - `localhost:5500/twig_test.php` con el comando `php -S 0.0.0.0:5500 -t .`
 - `localhost/twig_test.php` con PHP.
 
-(en vez de localhost podemos indicar la IP de la maquina directamente)
+(Recuerdo de nuevo, en vez de localhost podemos indicar la IP de la maquina directamente)
 
+Lo que podemos ver
+```bash
+Hello Fabien!
+```
