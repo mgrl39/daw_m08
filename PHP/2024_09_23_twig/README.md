@@ -79,7 +79,7 @@ Hello Fabien!
 ```
 
 ## Segundo Twig Test
-Creamos una carpeta `templates` y una carpeta `cache`.
+Creamos una carpeta `templates` y una carpeta `cache`. Una carpeta para las plantillas y otra para el cache. 
 ```bash
 mkdir templates cache
 ```
@@ -91,7 +91,7 @@ Con el editor que querais vamos a modificar el `index.html`, yo con el propio `v
 ```bash
 vim templates/index.html
 ```
-Y meteremos el siguiente contenido
+Meteremos el siguiente contenido
 ```html
 <h1>Hello {{ name }}!</h1>
 ```
