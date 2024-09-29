@@ -20,3 +20,21 @@ No es muy complicado instalar bootstrap, vamos a la raiz de nuestro proyecto (en
 ```bash
 composer require twbs/bootstrap
 ```
+En mi caso aparecio este texto despues de ejecutar el comando
+```bash
+Using version ^5.3 for twbs/bootstrap
+./composer.json has been updated
+Running composer update twbs/bootstrap
+Loading composer repositories with package information
+Updating dependencies
+Lock file operations: 1 install, 0 updates, 0 removals
+  - Locking twbs/bootstrap (v5.3.3)
+Writing lock file
+Installing dependencies from lock file (including require-dev)
+Package operations: 1 install, 0 updates, 0 removals
+  - Downloading twbs/bootstrap (v5.3.3)
+  - Installing twbs/bootstrap (v5.3.3): Extracting archive
+Generating autoload files
+5 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+```
