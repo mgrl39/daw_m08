@@ -10,7 +10,7 @@ Bootstrap es un framework multiplataforma o conjunto de herramientas de código 
 (Wikipedia).
 
 ## Ficheros de error de Apache
-En `/etc/apache2` tenemos los ficheros de Apache, los ficheros de error de apache estan en `/var/log/apache2/error.log`. En nuestro caso como como no hemos cambiado nada de la configuracion default, podemos visualizar este archivo para ver los errores (cuando la pantalla se queda en blanco tocando codigo PHP). Es decir, se puede abrir una nueva terminal y usar 
+En `/etc/apache2` tenemos los ficheros de Apache, los ficheros de error de apache estan en `/var/log/apache2/error.log`. En nuestro caso como como no hemos cambiado nada de la configuracion default, podemos visualizar este archivo para ver los errores (cuando la pantalla se queda en blanco tocando codigo PHP). Es decir, se puede abrir una nueva terminal y usar la siguiente instruccion para ver fallos.
 ```shell
 tail -f /var/log/apache2/error.log
 ```
