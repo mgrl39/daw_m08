@@ -38,3 +38,15 @@ Generating autoload files
 5 packages you are using are looking for funding.
 Use the `composer fund` command to find out more!
 ```
+
+## Modificacion de nuestra Template
+Despues de haber instalado **Bootstrap**, entramos dentro de nuestra template (en mi caso `/var/www/html/templates/index.html`) y metemos en el apartado `head`
+```html
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+```
+Solo con esto ya tenemos Bootstrap en una template, el siguiente capitulo sera mejorar la template que tenemos usando bootstrap, **pero sin liarla**.
+
+Finalmente, las paginas que se han utilizado para esto:
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+https://getbootstrap.com/
+https://themes.getbootstrap.com/
