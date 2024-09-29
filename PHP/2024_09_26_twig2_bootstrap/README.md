@@ -47,6 +47,6 @@ Despues de haber instalado **Bootstrap**, entramos dentro de nuestra template (e
 Solo con esto ya tenemos Bootstrap en una template, el siguiente capitulo sera mejorar la template que tenemos usando bootstrap, **pero sin liarla**.
 
 Finalmente, las paginas que se han utilizado para esto:
-https://getbootstrap.com/docs/5.0/getting-started/introduction/
-https://getbootstrap.com/
-https://themes.getbootstrap.com/
+- https://getbootstrap.com/docs/5.0/getting-started/introduction/
+- https://getbootstrap.com/
+- https://themes.getbootstrap.com/
