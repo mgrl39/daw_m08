@@ -1,7 +1,7 @@
 # Implementar Bootstrap en Twig
 
 La tarea que había era hacer una plantilla y realizar cualquier tipo de pagina usando variables, por ejemplo hacer un curriculum con info nuestra. Un html de una pagina que nos represente.e
-Esto se pueede ver hecho en [Twig 2](2024_09_26_twig2/README.md).
+Esto se pueede ver hecho en [Twig 2](../2024_09_26_twig2/README.md).
 A partir de aqui, vamos a meterle Bootstrap al Twig.
 
 ## Que es Bootstrap
