@@ -87,9 +87,11 @@ Quedaria de la siguiente manera
 ```
 (en esta carpeta solo he puesto el `templates/index.html` ya que es el unico archivo que se ha modificado. El otro sigue exactamente igual.
 
+![Result with twig2](https://raw.githubusercontent.com/mgrl39/DAW_M08/refs/heads/main/PHP/2024_09_26_twig2_bootstrap/result.jpeg "Result with twig2")
 ## Siguiente Objetivo
 Solo con esto ya tenemos Bootstrap en una template, el siguiente capitulo es: **mejorar la template usando Bootstrap pero sin liarla**.
 
+---
 Finalmente, las paginas que se han utilizado para esto:
 - https://getbootstrap.com/docs/5.0/getting-started/introduction/
 - https://getbootstrap.com/
