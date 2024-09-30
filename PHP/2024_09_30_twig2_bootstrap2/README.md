@@ -1,7 +1,7 @@
 # Bootstrap y Twig 🌳🍂🐿️
 Hoy vamos a **mejorar la template usando Bootstrap pero sin liarla.**
 
-Para llegar a este punto hay que tener tanto Twig como Bootstrap instalado. En pasos anteriores se explica.
+Para llegar a este punto hay que tener tanto Twig como Bootstrap instalados. En pasos anteriores se explica.
 
 ## Modificaciones en el titulo
 Primeramente, tenia una barra separadora que era un `hr`, este fue eliminado, lo que hice es crear un `div` y con la clase `border` "simule" la barra que tenia anteriormentente.
