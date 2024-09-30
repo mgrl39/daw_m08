@@ -44,7 +44,51 @@ Despues de haber instalado **Bootstrap**, entramos dentro de nuestra template (e
 ```html
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
 ```
-Solo con esto ya tenemos Bootstrap en una template, el siguiente capitulo sera mejorar la template que tenemos usando bootstrap, **pero sin liarla**.
+Quedaria de la siguiente manera
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ titulo }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+	<body>
+		<h1>{{ name }}'s info! {{ emoji }}</h1>
+		<hr>
+		<p><strong>{{ social_network }}: </strong><a href="https://{{ social_link }}" target="_blank">{{ social_link }}</a></p>
+		<h2>Education</h2>
+		<ul>
+			{% for edu in education %}
+			<li>
+				<strong>{{ edu.degree }}</strong>
+				{{ edu.institution }} ({{ edu.year }})<br>
+			</li>
+			{% endfor %}
+		</ul>
+		<h2>Work Experience</h2>
+		<ul>
+			{% for work in work_experience %}
+			<li>
+				<strong>{{ work.role }}</strong>
+				({{ work.year }})<br>
+			</li>
+			{% endfor %}
+		</ul>
+		<h2>Learning</h2>
+		<ol>
+			{% for learn in learning %}
+			<li>
+				<strong>{{ learn.language }}</strong>
+			</li>
+			{% endfor %}
+		</ol>
+	</body>
+</html>
+```
+(en esta carpeta solo he puesto el `templates/index.html` ya que es el unico archivo que se ha modificado. El otro sigue exactamente igual.
+
+## Siguiente Objetivo
+Solo con esto ya tenemos Bootstrap en una template, el siguiente capitulo es: **mejorar la template usando Bootstrap pero sin liarla**.
 
 Finalmente, las paginas que se han utilizado para esto:
 - https://getbootstrap.com/docs/5.0/getting-started/introduction/
