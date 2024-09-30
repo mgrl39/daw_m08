@@ -73,7 +73,7 @@ Entonces, si entramos a la pagina:
 
 (en vez de localhost podemos indicar la IP de la maquina directamente)
 
-Entonces, veremos una pagina que literalmente pone:
+Veremos una pagina que literalmente pone:
 ```html
 Hello Fabien!
 ```
