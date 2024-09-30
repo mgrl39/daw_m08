@@ -4,6 +4,7 @@ De tarea nos mandaron crear una template basica y meter ciertas variables en el 
 
 ![Result](https://raw.githubusercontent.com/mgrl39/DAW_M08/refs/heads/main/PHP/2024_09_26_twig2/result.jpeg "result")
 
+---
 Para realizar este proyecto he necesitado de:
 - https://twig.symfony.com/doc/3.x/templates.html
 - https://craftcms.com/docs/getting-started-tutorial/build/twig.html
