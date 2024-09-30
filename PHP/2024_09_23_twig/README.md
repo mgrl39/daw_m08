@@ -117,7 +117,7 @@ Lo mismo de antes, si es con Apache tenemos que volver a cambiar permisos `sudo 
 
 Entonces, si entramos a la pagina:
 - `localhost:5500/twig_test.php` con el comando `php -S 0.0.0.0:5500 -t .`
-- `localhost/twig_test.php` con PHP.
+- `localhost/twig_test.php` con Apache2.
 
 (Recuerdo de nuevo, en vez de localhost podemos indicar la IP de la maquina directamente)
 
