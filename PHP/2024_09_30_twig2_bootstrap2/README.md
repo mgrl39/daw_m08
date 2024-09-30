@@ -24,5 +24,22 @@ Para centrar nuestro titulo, meti el `h1` en un `div`
 	<h1 class="text-center">{{ name }}'s info! {{ emoji }}</h1>
 </div>
 ```
+
+## Las listas
+Uno de los cambios que mas destacan es el cambio de las listas. Para conseguir este estilo a la etiqueta `<ul>` se le añadio la clase `list-group` y a cada elemento se le añade `list-group-item list-group-item-action`. El list-group-item es el que les cambia a este nuevo "efecto" y el `list-group-item-action` es el que permite que al pasar el mouse por encima se oscurezca el actual.
+
+Parte del contenido dentro de la lista se encuentra dentro de una etiqueta `span`, asi poder conseguir el mismo estilo de negrita con la clase nombrada anteriormente (`fw-bold`).
+
+La lista de **Work Experience** contiene un valor mas, es el `type=button`, aunque creo que es "raro" que este en una lista, el raton se pone en "modo clic" (cambia el emoji a la mano de arrastrar).
+
+La lista de **Learning** sigue siendo diferente ya que es `class=list-group list-group-numbered`, es decir, es una lista ordenada.
+
+## Alert
+Finalmente debajo de las listas podemos encontrar un `<div>` con la clase `Alert`
+```html
+<div class="alert alert-success text-center" role="alert">
+	{{ emoji }} {{ emoji }} {{ emoji }} {{ emoji }} 
+</div>
+```
 ## Resultado final
 ![Result with twig2 and Bootstrap](https://raw.githubusercontent.com/mgrl39/DAW_M08/refs/heads/main/PHP/2024_09_30_twig2_bootstrap2/result.jpeg "Result with twig2 and Bootstrap")
