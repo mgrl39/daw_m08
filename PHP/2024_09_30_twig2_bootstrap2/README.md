@@ -37,7 +37,34 @@ Parte del contenido dentro de la lista se encuentra dentro de una etiqueta `span
 La lista de **Work Experience** contiene un valor mas, es el `type=button`, aunque creo que es "raro" que este en una lista, el raton se pone en "modo clic" (cambia el emoji a la mano de arrastrar).
 
 La lista de **Learning** sigue siendo diferente ya que es `class=list-group list-group-numbered`, es decir, es una lista ordenada.
-
+```html
+<h2 class="text-danger">Education</h2>
+<ul class="list-group">
+	{% for edu in education %}
+	<li class="list-group-item list-group-item-action">
+		<span class="fw-bold">{{ edu.degree }}</span>
+		{{ edu.institution }} ({{ edu.year }})
+	</li>
+	{% endfor %}
+</ul>
+<h2 class="text-primary">Work Experience</h2>
+<ul class="list-group">
+	{% for work in work_experience %}
+	<li class="list-group-item list-group-item-action" type="button">
+		<span class="fw-bold">{{ work.role }}</span>
+		({{ work.year }})
+	</li>
+	{% endfor %}
+</ul>
+<h2 class="text-warning">Learning</h2>
+<ol class="list-group list-group-numbered">
+	{% for learn in learning %}
+	<li class="list-group-item">
+		<span class="fw-bold">{{ learn.language }}</span>
+	</li>
+	{% endfor %}
+</ol>
+```
 ## Alert
 Finalmente debajo de las listas podemos encontrar un `<div>` con la clase `Alert`
 ```html
