@@ -32,7 +32,7 @@ Las cogeria de funciones como `get_username`... `get_saludo`... creadas por noso
 Vamos a instalar Twig. Symfony (un framework) usa Twig. https://twig.symfony.com/
 
 
-Podemos instalar Twig con el **composer** (un gestor de librerias), composer esta bien porque instala librerias de PHP, etntonces instalaremos composer:
+Podemos instalar Twig con el **composer** (un gestor de librerias), composer esta bien porque instala librerias de PHP, entonces instalaremos composer:
 ```bash
 sudo apt install composer -y
 ```
