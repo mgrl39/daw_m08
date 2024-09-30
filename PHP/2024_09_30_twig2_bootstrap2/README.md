@@ -20,9 +20,9 @@ Para conseguir que el `h2` Education fuera de color rojo, utilice la clase `text
 ```
 Para centrar nuestro titulo, meti el `h1` en un `div` 
 ```html
-		<div class="d-flex align-items-center justify-content-center border">
-			<h1 class="text-center">{{ name }}'s info! {{ emoji }}</h1>
-		</div>
+<div class="d-flex align-items-center justify-content-center border">
+	<h1 class="text-center">{{ name }}'s info! {{ emoji }}</h1>
+</div>
 ```
 ## Resultado final
 ![Result with twig2 and Bootstrap](https://raw.githubusercontent.com/mgrl39/DAW_M08/refs/heads/main/PHP/2024_09_30_twig2_bootstrap2/result.jpeg "Result with twig2 and Bootstrap")
