@@ -61,6 +61,7 @@ echo "<td>" . $word . "</td>";
 ```
 Si no le paso argumentos a la funcion, el parametro por defecto sera `7`, es por eso el `$length = 7`.
 
+---
 Las 3 paginas que necesite para la mejora de este proyecto fueron:
 - https://www.php.net/manual/en/function.is-numeric.php
 - https://stackoverflow.com/questions/4356289/php-random-string-generator
