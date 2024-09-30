@@ -6,7 +6,11 @@ Para llegar a este punto hay que tener tanto Twig como Bootstrap instalado. En p
 ## Modificaciones en el titulo
 Primeramente, tenia una barra separadora que era un `hr`, este fue eliminado, lo que hice es crear un `div` y con la clase `border` "simule" la barra que tenia anteriormentente.
 Usando `d-flex align-items-center justify-content-center` consegui poner el titulo en medio.
-
+```html
+<div class="d-flex align-items-center justify-content-center border">
+	<h1 class="text-center">{{ name }}'s info! {{ emoji }}</h1>
+</div>
+```
 ## La letra negrita
 Ya no uso la etiqueta `<strong>`, utilizo la clase  `fw-bold`. Se puede apreciar justo debajo del titulo, donde pone **Github** y en los elementos de las listas.
 ```html
