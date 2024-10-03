@@ -1,4 +1,4 @@
-
+# Un poco de PHP
 
 Php es un lenguaje que no se compila, se interpreta.
 Que no se compile no significa que no de errores, da errores y muchos de esos errores te quedas como sin saber, ves todo blanco, muy bien, falla, no se sabe dónde.
