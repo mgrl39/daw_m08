@@ -20,6 +20,7 @@ sudo ufw allow in "Apache"
 ```bash
 sudo ufw allow
 ```
+## Instalar MySQL Server
 ![Imagen 003](https://raw.githubusercontent.com/mgrl39/DAW_M08/refs/heads/main/PHP/2024_09_19_activation/img/img_003.png)
 ```bash
 sudo apt install mysql-server -y
@@ -46,6 +47,7 @@ Reload privilege tables now? y
 ![Imagen 008](https://raw.githubusercontent.com/mgrl39/DAW_M08/refs/heads/main/PHP/2024_09_19_activation/img/img_008.png)
 ![Imagen 009](https://raw.githubusercontent.com/mgrl39/DAW_M08/refs/heads/main/PHP/2024_09_19_activation/img/img_009.png)
 ![Imagen 010](https://raw.githubusercontent.com/mgrl39/DAW_M08/refs/heads/main/PHP/2024_09_19_activation/img/img_010.png)
+## Instalar PHP
 ```bash
 sudo apt install php libapache2-mod-php php-mysql -y
 ```
@@ -60,5 +62,7 @@ echo "<?php echo phpinfo();" >> /var/www/html/index.php
 cat /var/www/html/index.php
 ```
 ![Imagen 012](https://raw.githubusercontent.com/mgrl39/DAW_M08/refs/heads/main/PHP/2024_09_19_activation/img/img_012.png)
+
+## Resultado final
 Abrimos la pagina localhost/index.php y saldra la siguiente pagina.
 ![Imagen 013](https://raw.githubusercontent.com/mgrl39/DAW_M08/refs/heads/main/PHP/2024_09_19_activation/img/img_013.png)
