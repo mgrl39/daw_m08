@@ -3,6 +3,13 @@ Hoy vamos a **mejorar la template usando Bootstrap pero sin liarla.**
 
 Para llegar a este punto hay que tener tanto Twig como Bootstrap instalados. En pasos anteriores se explica.
 
+## No recursos externos
+No queremos los recursos externos, usamos lo que descargamos, por algo hicimos el `composer require twbs/bootstrap`.
+
+```html
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+		<link href="../vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+```
 ## Modificaciones en el titulo
 Primeramente, tenia una barra separadora que era un `hr`, este fue eliminado, lo que hice es crear un `div` y con la clase `border` "simule" la barra que tenia anteriormentente.
 Usando `d-flex align-items-center justify-content-center` consegui poner el titulo en medio.
