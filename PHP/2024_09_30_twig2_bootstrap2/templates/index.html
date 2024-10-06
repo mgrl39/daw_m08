@@ -2,11 +2,12 @@
 <html>
 	<head>
 		<title>{{ titulo }}</title>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+		<link href="../vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	</head>
 	<body>
 		<div class="d-flex align-items-center justify-content-center border">
-			<h1 class="text-center">{{ name }}'s info! {{ emoji }}</h1>
+			<h1>{{ name }}'s info! {{ emoji }}</h1>
 		</div>
 		<p class="fw-bold">{{ social_network }}: <a href="https://{{ social_link }}" target="_blank">{{ social_link }}</a></p>
 		<h2 class="text-danger">Education</h2>
