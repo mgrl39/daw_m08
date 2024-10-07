@@ -1,4 +1,9 @@
 # Conectandonos a MySQL en PHP usando PDO
+
+> [!CAUTION]
+> En construccion. 🏗️
+
+
 La clase de hoy se ha basado en el siguiente repo --> https://github.com/taniarascia/pdo
 
 ---
