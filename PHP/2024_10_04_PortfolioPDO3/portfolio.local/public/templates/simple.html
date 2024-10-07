@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ titulo }}</title>
+</head>
+<body>
+    <h1>{{ titulo }}</h1>
+    <ul>
+        {% for project in projects %}
+            <li>
+                <h2>{{ project.name }}</h2>
+                <p>{{ project.description }}</p>
+                <h3>Tecnologías:</h3>
+                <ul>
+                    {% for tech in project.technologies %}
+                        <li>{{ tech.name }}</li>
+                    {% endfor %}
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
