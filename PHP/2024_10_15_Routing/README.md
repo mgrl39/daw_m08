@@ -5,7 +5,7 @@ Si no tenemos configurado el entorno, podemos instalarlo asi.
 sudo apt update && sudo apt install apache2 -y && sudo ufw app list && sudo ufw enable && sudo ufw status && sudo ufw allow in "Apache" && sudo apt install mysql-server -y && sudo apt install php libapache2-mod-php php-mysql -y && sudo echo "<?php echo phpinfo();" >> /var/www/html/index.php
 ```
 Haria falta configurar MySQL si quisieramos usar base de datos. En `activation` podemos ver como se hizo. Pero para routing no es necesario.
-## Configuracion del Entorno
+## Configuracion del `/var/www/routing.local`
 ### Creamos la carpeta `routing.local`
 ```bash
 sudo su
@@ -81,3 +81,17 @@ cd /var/www/routing.local
 sudo chown -R usuario:www-data .
 ```
 
+## Configuracion en `sites-available`
+```bash
+cd /etc/apache2/sites-available
+```
+```bash
+echo -e '<VirtualHost *:80>\n    ServerAdmin admin@routing.local\n    ServerName www.routing.local\n    ServerAlias routing.local\n    DocumentRoot /var/www/routing.local/public\n    ErrorLog ${APACHE_LOG_DIR}/error.log\n    CustomLog ${APACHE_LOG_DIR}/access.log combined\n    <Directory /var/www/routing.local/public>\n        AllowOverride All\n    </Directory>\n</VirtualHost>' > routing.local.conf
+```
+```bash
+sudo a2ensite routing.local.conf && sudo systemctl reload apache2
+```
+## Configuracion en `/etc/hosts`
+```bash
+echo -e "127.0.0.1\twww.routing.local" | sudo tee -a /etc/hosts
+```
