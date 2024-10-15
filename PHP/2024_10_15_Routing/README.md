@@ -18,6 +18,9 @@ mkdir routing.local
 ```
 ### Creamos la carpeta `public`
 ```bash
+cd routing.local
+```
+```bash
 cd public
 ```
 ### Creamos el archivo `.htaccess`
