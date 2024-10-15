@@ -32,6 +32,9 @@ mkdir public
 ```
 ### Creamos el archivo `.htaccess`
 ```bash
+cd public
+```
+```bash
 touch .htaccess
 ```
 Metemos el siguiente contenido dentro de `.htaccess`. Yo lo hare con vim `sudo apt install vim -y`.
