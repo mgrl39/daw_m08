@@ -73,4 +73,11 @@ echo -e "<h1>Contact us</h1>\n<p>Getting in touch is easy. Just email us</p>" > 
 echo -e "<h1>Home</h1>\n<p>Welcome in my app.</p>" > home.php
 echo -e "<h1>Users</h1>\n<p>List of our users.</p>" > users.php
 ```
+### Revisamos los permisos de `/var/www/routing.local`
+```bash
+cd /var/www/routing.local
+```
+```bash
+sudo chown -R usuario:www-data .
+```
 
