@@ -122,3 +122,6 @@ sudo a2enmod rewrite
 ```bash
 sudo systemctl reload apache2
 ```
+
+## Links
+> https://hidemywpghost.com/make-sure-htaccess-is-working-with-allowoverride-all/
