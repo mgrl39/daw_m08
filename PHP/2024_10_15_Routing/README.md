@@ -34,7 +34,10 @@ mkdir public
 ```bash
 touch .htaccess
 ```
-Metemos el siguiente contenido dentro de `.htaccess`
+Metemos el siguiente contenido dentro de `.htaccess`. Yo lo hare con vim `sudo apt install vim -y`.
+```bash
+vim .htaccess
+```
 ```bash
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
