@@ -92,7 +92,10 @@ cd /etc/apache2/sites-available
 echo -e '<VirtualHost *:80>\n    ServerAdmin admin@routing.local\n    ServerName www.routing.local\n    ServerAlias routing.local\n    DocumentRoot /var/www/routing.local/public\n    ErrorLog ${APACHE_LOG_DIR}/error.log\n    CustomLog ${APACHE_LOG_DIR}/access.log combined\n    <Directory /var/www/routing.local/public>\n        AllowOverride All\n    </Directory>\n</VirtualHost>' > routing.local.conf
 ```
 ```bash
-sudo a2ensite routing.local.conf && sudo systemctl reload apache2
+sudo a2ensite routing.local.conf
+```
+```bash
+sudo systemctl reload apache2
 ```
 ## Configuracion en `/etc/hosts`
 ```bash
