@@ -6,6 +6,9 @@ Ubuntu Desktop 22.04 - 15 de octubre de 2024
 ## Instalacion del Entorno
 Si no tenemos configurado el entorno, podemos instalarlo asi. 
 ```bash
+sudo su
+```
+```bash
 sudo apt update && sudo apt install apache2 -y && sudo ufw app list && sudo ufw enable && sudo ufw status && sudo ufw allow in "Apache" && sudo apt install mysql-server -y && sudo apt install php libapache2-mod-php php-mysql -y && sudo echo "<?php echo phpinfo();" >> /var/www/html/index.php
 ```
 Haria falta configurar MySQL si quisieramos usar base de datos. En `activation` podemos ver como se hizo. Pero para routing no es necesario.
