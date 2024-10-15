@@ -103,5 +103,8 @@ echo -e "127.0.0.1\twww.routing.local" | sudo tee -a /etc/hosts
 ```
 ## Permitir el modulo `rewrite`
 ```bash
-sudo a2enmod rewrite && sudo systemctl reload apache2
+sudo a2enmod rewrite
+```
+```bash
+sudo systemctl reload apache2
 ```
