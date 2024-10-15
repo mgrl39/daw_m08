@@ -33,6 +33,8 @@ RewriteRule ^(.*)$ index.php
 ### Creamos el `index.php`
 ```bash
 touch index.php
+```
+Metemos el siguiente contenido dentro de `index.php`
 ```php
 <?php
 
