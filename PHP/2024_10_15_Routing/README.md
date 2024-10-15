@@ -62,7 +62,7 @@ switch ($request) {
 ```
 ### Creamos la carpeta `views`
 ```bash
-mkdir views
+mkdir views && cd views
 ```
 ### Creamos 4 archivos dentro de `views`
 ```bash
