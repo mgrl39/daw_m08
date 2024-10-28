@@ -1,5 +1,6 @@
 ```sql
 CREATE DATABASE IF NOT EXISTS api;
+GRANT ALL ON api.* to 'usuario'@'localhost';
 ```
 ```sql
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
