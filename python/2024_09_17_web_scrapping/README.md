@@ -1,5 +1,5 @@
 # Testing Python Selenium Soup
-Esto es un poco de Web Scrapping usando bs4 y Selenium. La referencia de esto viene de la siguiente pagina: 
+Esto es un poco de Web Scraping usando bs4 y Selenium. La referencia de esto viene de la siguiente pagina: 
 - https://medium.com/@udofiaetietop/webscrapping-beautifulsoup-or-selenium-3467edb3c0d9
 - https://selenium-python.readthedocs.io/index.html
 - https://codigofacilito.com/articulos/entornos-virtuales-python
